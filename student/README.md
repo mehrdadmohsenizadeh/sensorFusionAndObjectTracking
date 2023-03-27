@@ -12,7 +12,7 @@
       <code>association.py</code>
       </td>
       <td>
-      Data association class with single nearest neighbor<br>association and gating based on Mahalanobis distance.
+      Data association class with single nearest neighbor<br>association and gating based on $\text{Mahalanobis distance}$.
       </td>
     </tr>
     <tr>
