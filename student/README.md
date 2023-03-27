@@ -1,18 +1,24 @@
 <table>
   <thead>
     <tr>
-      <th width="30%">File</th>
-      <th>Description</th>
+      <th width="20%">File</th>
+      <th width="40%">Description</th>
+      <th width="30%">Methods</th>
     </tr>
   </thead>
   <tbody>
+    <!--
+    -------------------------------------------------------------------------------------------------------------
+                                                association.py
+    -------------------------------------------------------------------------------------------------------------
+    -->
     <tr>
       <td>
       <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%">
       <code>association.py</code>
       </td>
       <td>
-      Data association class with single nearest neighbor association and gating based on $\textbf{Mahalanobis distance}$.
+      Data association class with single nearest neighbor association and gating based on <b>Mahalanobis distance</b>.
       </td>
     </tr>
     <tr>
