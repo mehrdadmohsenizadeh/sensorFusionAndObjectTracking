@@ -3,7 +3,7 @@ Udacity | Nanodegree | Self Driving Car Engineer | CH03 - Sensor Fusion | Projec
 
 
 # SDCND : Sensor Fusion and Tracking
-This is the project for the second course in the  [Udacity Self-Driving Car Engineer Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213) : Sensor Fusion and Tracking. 
+This is the project for the second course in the [Udacity Self-Driving Car Engineer Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213) : Sensor Fusion and Tracking. 
 
 In this project, you'll fuse measurements from LiDAR and camera and track vehicles over time. You will be using real-world data from the Waymo Open Dataset, detect objects in 3D point clouds and apply an extended Kalman filter for sensor fusion and tracking.
 
@@ -24,9 +24,9 @@ Also, the project code contains various tasks, which are detailed step-by-step i
 <table>
   <thead>
     <tr>
-      <th width="25%">Directories/Files</th>
-      <th width="50%">Description</th>
-      <th width="25%">Sub-directories/Files</th>
+      <th width="30%">Directories/Files</th>
+      <th width="40%">Description</th>
+      <th width="30%">Sub-directories/Files</th>
     </tr>
   </thead>
   <tbody>
@@ -54,8 +54,8 @@ Also, the project code contains various tasks, which are detailed step-by-step i
       <td>📁<code>results</code></td>
       <td></td>
       <td>
-      📁<code>results_sequence_1_resnet</code>
-      📁<code>results_sequence_2_resnet</code>
+      📁<code>results_sequence_1_resnet</code><br>
+      📁<code>results_sequence_2_resnet</code><br>
       📁<code>results_sequence_3_resnet</code>
       </td>
     </tr>
@@ -76,8 +76,7 @@ Also, the project code contains various tasks, which are detailed step-by-step i
       <td>📁<code>tools</code></td>
       <td></td>
       <td>
-       📁<code>objdet_models</code>
-      <br>
+       📁<code>objdet_models</code><br>
        📁<code>waymo_reader</code>
       </td>
     </tr>
