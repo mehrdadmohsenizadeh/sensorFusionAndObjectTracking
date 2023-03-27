@@ -32,7 +32,8 @@ Also, the project code contains various tasks, which are detailed step-by-step i
   <tbody>
     <tr>
       <td>📁<code>dataset</code></td>
-      <td>contains the <a href="https://console.cloud.google.com/storage/browser/waymo_open_dataset_v_1_2_0_individual_files;tab=objects?pli=1&prefix=&forceOnObjectsSortingFiltering=false&pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))">Waymo Open Dataset</a> sequences</td>
+      <td>Contains the <a href="https://console.cloud.google.com/storage/browser/waymo_open_dataset_v_1_2_0_individual_files;tab=objects?pli=1&prefix=&forceOnObjectsSortingFiltering=false&pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))">Waymo Open Dataset</a> sequences.
+      </td>
       <td></td>
     </tr>
     <tr>
@@ -73,7 +74,9 @@ Also, the project code contains various tasks, which are detailed step-by-step i
       </td>
     </tr>
     <tr>
-      <td>📁<code>tools</code></td>
+      <td>
+        📁<code>tools</code>
+      </td>
       <td></td>
       <td>
        📁<code>objdet_models</code><br>
@@ -101,7 +104,10 @@ Also, the project code contains various tasks, which are detailed step-by-step i
        <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%">
        <code>loop_over_dataset.py</code>
      </td>
-      <td></td>
+      <td>
+        Loops over all frames in a Waymo Open Dataset file,<br>
+        <b>detects</b> and <b>tracks</b> objects and <b>visualizes</b> results.
+      </td>
       <td>-</td>
     </tr>
     <tr>
@@ -169,10 +175,6 @@ Also, the project code contains various tasks, which are detailed step-by-step i
  ┃ ┃ ┃ ┣ 📂utils --> various helper functions<br>
  ┃ ┃ ┃<br>
  ┃ ┗ 📂waymo_reader --> functions for light-weight loading of Waymo sequences<br>
- ┃<br>
- ┣ basic_loop.py<br>
- ┣ loop_over_dataset.py<br>
-
 
 
 ## Installation Instructions for Running Locally
