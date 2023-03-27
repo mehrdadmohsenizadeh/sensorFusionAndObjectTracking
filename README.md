@@ -2,16 +2,43 @@
 Udacity | Nanodegree | Self Driving Car Engineer | CH03 - Sensor Fusion | Project
 
 
-# SDCND : Sensor Fusion and Tracking
+# Sensor Fusion and Tracking (SDCND)
 This is the project for the second course in the [Udacity Self-Driving Car Engineer Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213) : Sensor Fusion and Tracking. 
 
-In this project, you'll fuse measurements from LiDAR and camera and track vehicles over time. You will be using real-world data from the Waymo Open Dataset, detect objects in 3D point clouds and apply an extended Kalman filter for sensor fusion and tracking.
+In this project, you will:
+* Fuse measurements from $\text{LiDAR}$ and $\text{Camera}$ and track vehicles over time.
+* Use real-world data from the Waymo Open Dataset, detect objects in 3D point clouds and apply an extended Kalman filter for sensor fusion and tracking.
 
 <img src="img/img_title_1.jpeg"/>
 
 The project consists of two major parts: 
-1. **Object detection**: In this part, a deep-learning approach is used to detect vehicles in LiDAR data based on a birds-eye view perspective of the 3D point-cloud. Also, a series of performance measures is used to evaluate the performance of the detection approach. 
-2. **Object tracking** : In this part, an extended Kalman filter is used to track vehicles over time, based on the lidar detections fused with camera detections. Data association and track management are implemented as well.
+
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Objectives</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Object detection</td>
+      <td>
+      1. Detecting vehicles in LiDAR data based on a $\textbf{Birds-Eye View (BEV)}$ perspective of the 3D $\textbf{Point-Cloud (PCL)}$, using a deep-learning approach.
+      <br>
+      2. Evaluating the performance of the detections, using a series of performance measures. 
+      </td>
+    </tr>
+    <tr>
+      <td>Object tracking</td>
+      <td>
+      1. Tracking vehicles over time based on the lidar detections fused with camera detections, using an $\textbf{Extended Kalman}$ $\textbf{Filter (EKF)}$. 
+      <br>
+      2. implementing data association and track management.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 The following diagram contains an outline of the data flow and of the individual steps that make up the algorithm. 
 
@@ -54,7 +81,7 @@ Also, the project code contains various tasks, which are detailed step-by-step i
     <tr>
       <td>📁<code>results</code></td>
       <td>
-      Binary files with pre-computed intermediate results.
+      Contains binary files with pre-computed intermediate results.
       </td>
       <td>
       📁<code>results_sequence_1_resnet</code><br>
@@ -80,7 +107,7 @@ Also, the project code contains various tasks, which are detailed step-by-step i
         📁<code>tools</code>
       </td>
       <td>
-      External tools
+      Contains external tools.
       </td>
       <td>
        📁<code>objdet_models</code><br>
@@ -143,16 +170,6 @@ Also, the project code contains various tasks, which are detailed step-by-step i
 
 
 📦project<br>
- ┣ 📂dataset --> contains the Waymo Open Dataset sequences <br>
- ┃<br>
- ┣ 📂misc<br>
- ┃ ┣ evaluation.py --> plot functions for tracking visualization and RMSE calculation<br>
- ┃ ┣ helpers.py --> misc. helper functions, e.g. for loading / saving binary files<br>
- ┃ ┗ objdet_tools.py --> object detection functions without student tasks<br>
- ┃ ┗ params.py --> parameter file for the tracking part<br>
- ┃ <br>
- ┣ 📂results --> binary files with pre-computed intermediate results<br>
- ┃ <br>
  ┣ 📂student <br>
  ┃ ┣ association.py --> data association logic for assigning measurements to tracks incl. student tasks <br>
  ┃ ┣ filter.py --> extended Kalman filter implementation incl. student tasks <br>
