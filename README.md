@@ -53,7 +53,9 @@ Also, the project code contains various tasks, which are detailed step-by-step i
     </tr>
     <tr>
       <td>📁<code>results</code></td>
-      <td></td>
+      <td>
+      Binary files with pre-computed intermediate results.
+      </td>
       <td>
       📁<code>results_sequence_1_resnet</code><br>
       📁<code>results_sequence_2_resnet</code><br>
@@ -77,7 +79,9 @@ Also, the project code contains various tasks, which are detailed step-by-step i
       <td>
         📁<code>tools</code>
       </td>
-      <td></td>
+      <td>
+      External tools
+      </td>
       <td>
        📁<code>objdet_models</code><br>
        📁<code>waymo_reader</code>
