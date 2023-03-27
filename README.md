@@ -21,6 +21,118 @@ Also, the project code contains various tasks, which are detailed step-by-step i
 
 ## Project File Structure
 
+<table>
+  <thead>
+    <tr>
+      <th width="25%">Directories/Files</th>
+      <th width="50%">Description</th>
+      <th width="25%">Sub-directories/Files</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>📁<code>dataset</code></td>
+      <td>contains the <a href="https://console.cloud.google.com/storage/browser/waymo_open_dataset_v_1_2_0_individual_files;tab=objects?pli=1&prefix=&forceOnObjectsSortingFiltering=false&pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))">Waymo Open Dataset</a> sequences</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>📁<code>img</code></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>📁<code>misc</code></td>
+      <td></td>
+      <td>
+       <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%"><code>evaluation.py</code><br>
+       <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%"><code>helpers.py</code><br>
+       <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%"><code>objdet_tools.py</code><br>
+       <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%"><code>params.py</code>
+     </td>
+    </tr>
+    <tr>
+      <td>📁<code>results</code></td>
+      <td></td>
+      <td>
+      📁<code>results_sequence_1_resnet</code>
+      📁<code>results_sequence_2_resnet</code>
+      📁<code>results_sequence_3_resnet</code>
+      </td>
+    </tr>
+    <tr>
+      <td>📁<code>student</code></td>
+      <td></td>
+      <td>
+      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%"><code>association.py</code><br>
+      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%"><code>filter.py</code><br>
+      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%"><code>measurements.py</code><br>
+      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%"><code>objdet_detect.py</code><br>
+      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%"><code>objdet_eval.py</code><br>
+      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%"><code>objdet_pcl.py</code><br>
+      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%"><code>trackmanagement.py</code><br>
+      </td>
+    </tr>
+    <tr>
+      <td>📁<code>tools</code></td>
+      <td></td>
+      <td>
+       📁<code>objdet_models</code>
+      <br>
+       📁<code>waymo_reader</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle">
+       <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%">
+       <code>bsaic_loop.py</code>
+     </td>
+      <td></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle">
+       <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%">
+       <code>LICENSE.md</code>
+     </td>
+      <td></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle">
+       <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%">
+       <code>loop_over_dataset.py</code>
+     </td>
+      <td></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle">
+       <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%">
+       <code>README.md</code>
+     </td>
+      <td></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle">
+       <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%">
+       <code>requirements.md</code>
+     </td>
+      <td></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle">
+       <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%">
+       <code>writeup.md</code>
+     </td>
+      <td></td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+
 📦project<br>
  ┣ 📂dataset --> contains the Waymo Open Dataset sequences <br>
  ┃<br>
