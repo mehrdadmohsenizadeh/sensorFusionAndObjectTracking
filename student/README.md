@@ -1,4 +1,4 @@
-This directory contains the following files:
+# Files Structure of the <code>../student</code> directory
 
 
 <table>
@@ -368,3 +368,21 @@ This directory contains the following files:
   </tr> 
   </tbody>
 </table>
+
+# Example
+
+To call the function (method) <code>bev_from_pcl()</code> from file <code>../student/objdet_pcl.py</code> within the file <code>../loop_over_dataset.py</code>, simply use:
+```python
+from student.objdet_pcl import bev_from_pcl
+```
+
+💡 <b>Note:</b> Some of the above files have two or more classes. Hence, when trying to call a method, you will have to call its class first. For example, file <code>trackmanagement.py</code> contains two classes: <code>Track</code> and <code>Trackmanagement</code>. If you want to use the <code>set_x()</code> method of <code>Track</code> class, you should do this:
+```python
+from student.trackmanagement.Track import set_x
+```
+
+or, alternatively:
+
+```python
+from student.trackmanagement import Track.set_x
+```
