@@ -1,3 +1,6 @@
+This directory contains the following files:
+
+
 <table>
   <thead>
     <tr>
@@ -26,32 +29,32 @@
                                                  Description
     ------------------------------------------------------------------------------------------------------------>
     <td>
-      Data association class with single nearest neighbor association and gating based on <b>Mahalanobis distance</b>.
+      Data association class with single nearest neighbor <b>association</b> and <b>gating</b> based on the <b>Mahalanobis distance</b>.
     </td>
     <!----------------------------------------------------------------------------------------------------------
                                                    Methods
     ------------------------------------------------------------------------------------------------------------>
     <td rowspan="2">
-      <table>
+      <table style="table-layout: fixed; width: 100%">
         <tr>
-          <td width="41%"><code>associate()</code></td>
-          <td>Replaces <code>association_matrix</code> with the actual<br><code>association_matrix</code> based on Mahalanobis distance<br>(see below) for all tracks and all measurements</td>
+          <td style="width: 50%"><code>associate()</code></td>
+          <td style="width: 50%">Replaces <code>association_matrix</code> with the actual<br><code>association_matrix</code> based on Mahalanobis distance<br>(see below) for all tracks and all measurements</td>
         </tr>
         <tr>
-          <td><code>get_closest_track_and_meas()</code></td>
-          <td>Finds closest track and measurement.</td>
+          <td style="width: 50%"><code>get_closest_track_and_meas()</code></td>
+          <td style="width: 50%">Finds closest track and measurement.</td>
         </tr>
         <tr>
-          <td><code>gating()</code></td>
-          <td>Returns <code>True</code> if measurement lies inside gate,<br>otherwise <code>False</code>.</td>
+          <td style="width: 50%"><code>gating()</code></td>
+          <td style="width: 50%">Returns <code>True</code> if measurement lies inside <b>gate</b>,<br>otherwise <code>False</code>.</td>
         </tr>
         <tr>
-          <td><code>MHD()</code></td>
-          <td>Calculates and returns Mahalanobis distance.</td>
+          <td style="width: 50%"><code>MHD()</code></td>
+          <td style="width: 50%">Calculates and returns the <b>Mahalanobis distance</b>.</td>
         </tr>
         <tr>
-          <td><code>associate_and_update()</code></td>
-          <td>Associate measurements and tracks.</td>
+          <td style="width: 50%"><code>associate_and_update()</code></td>
+          <td style="width: 50%">Associate measurements and tracks.</td>
         </tr>
       </table>
     </td>
@@ -83,30 +86,30 @@
                                                    Methods
     ------------------------------------------------------------------------------------------------------------>
     <td rowspan="2">
-      <table>
+      <table style="table-layout: fixed; width: 100%">
         <tr>
-          <td width="50%"><code>F()</code></td>
-          <td>Implements and returns the system matrix F.</td>
+          <td style="width: 50%"><code>F()</code></td>
+          <td>Implements and returns the <b>system matrix F</b>.</td>
         </tr>
         <tr>
           <td><code>Q()</code></td>
-          <td>Implements and returns the process noise covariance Q.</td>
+          <td>Implements and returns the <b>process noise covariance Q</b>.</td>
         </tr>
         <tr>
           <td><code>predict()</code></td>
-          <td>Predicts state x and estimation error covariance P to next<br>timestep, saves x and P in track.</td>
+          <td>Predicts <b>state x</b> and <b>estimation error covariance P</b> to next<br>timestep, saves x and P in the <b>track</b>.</td>
         </tr>
         <tr>
           <td><code>update()</code></td>
-          <td>Updates state x and covariance P with associated<br>measurement, saves x and P in track.</td>
+          <td>Updates <b>state x</b> and <b>covariance P</b> with associated measurement,<br>saves x and P in the <b>track</b>.</td>
         </tr>
         <tr>
           <td><code>gamma()</code></td>
-          <td>Calculates and returns the residual gamma.</td>
+          <td>Calculates and returns the <b>residual gamma</b>.</td>
         </tr>
         <tr>
           <td><code>S()</code></td>
-          <td>Calculates and returns the covariance of residual S.</td>
+          <td>Calculates and returns the <b>covariance of residual S</b>.</td>
         </tr>
     </table>
     </td>
@@ -138,22 +141,22 @@
                                                    Methods
     ------------------------------------------------------------------------------------------------------------>
     <td rowspan="2">
-      <table>
+      <table style="table-layout: fixed; width: 100%">
         <tr>
-          <td width="39%"><code><b>Sensor</b>.in_fov()</code></td>
-          <td>Checks if an object x can be seen by this sensor<br>(i.e., it's in Field of View of the sensor).</td>
+          <td style="width: 50%"><code><b>Sensor</b>.in_fov()</code></td>
+          <td style="width: 50%">Checks if an object x can be seen by<br>this sensor (i.e., <b>FOV</b> of the sensor).</td>
         </tr>
         <tr>
-          <td><code><b>Sensor</b>.get_hx()</code></td>
-          <td>Calculates nonlinear measurement expectation value h(x).</td>
+          <td style="width: 50%"><code><b>Sensor</b>.get_hx()</code></td>
+          <td style="width: 50%">Calculates <b>nonlinear measurement<br>expectation</b> value h(x).</td>
         </tr>
         <tr>
-          <td><code><b>Sensor</b>.get_H()</code></td>
-          <td>Predicts state x and estimation error covariance P<br>to next timestep, saves x and P in track.</td>
+          <td style="width: 50%"><code><b>Sensor</b>.get_H()</code></td>
+          <td style="width: 50%">Predicts <b>state x</b> and <b>estimation error </b><b>covariance P</b><br>to next timestep, saves x and P in the track.</td>
         </tr>
         <tr>
-          <td><code><b>Sensor</b>.generate_measurement()</code></td>
-          <td>Updates state x and covariance P with associated<br>measurement, saves x and P in track.</td>
+          <td style="width: 50%"><code><b>Sensor</b>.generate_measurement()</code></td>
+          <td style="width: 50%">Updates <b>state x</b> and <b>estimation error</b> <b>covariance P</b><br>with associated measurement, saves x and P in the track.</td>
         </tr>
     </table>
     </td>
@@ -185,26 +188,26 @@
                                                    Methods
     ------------------------------------------------------------------------------------------------------------>
     <td rowspan="2">
-      <table>
+      <table style="table-layout: fixed; width: 100%">
         <tr>
-          <td width="41%"><code>_sigmoid()</code></td>
-          <td>Applies the PyTorch <code>sigmoid</code> activation function.</td>
+          <td style="width: 50%"><code>_sigmoid()</code></td>
+          <td style="width: 50%">Applies the PyTorch <code>sigmoid</code> activation function.</td>
         </tr>
         <tr>
-          <td><code>load_configs_model()</code></td>
-          <td>Loads model (<code>darknet</code> or <code>resnet</code>) parameters into an <code>edict</code>.</td>
+          <td style="width: 50%"><code>load_configs_model()</code></td>
+          <td style="width: 50%">Loads model (<code>darknet</code> or <code>resnet</code>) parameters into<br>an EasyDict <code>edict</code>.</td>
         </tr>
         <tr>
-          <td><code>load_configs()</code></td>
-          <td>Loads all object-detection parameters into an <code>edict</code>.</td>
+          <td style="width: 50%"><code>load_configs()</code></td>
+          <td style="width: 50%">Loads all object-detection parameters into<br>an EasyDict <code>edict</code>.</td>
         </tr>
         <tr>
-          <td><code>create_model()</code></td>
-          <td>Creates model according to selected model type.</td>
+          <td style="width: 50%"><code>create_model()</code></td>
+          <td style="width: 50%">Creates model according to selected model type.</td>
         </tr>
         <tr>
-          <td><code>detect_objects()</code></td>
-          <td>Detects trained objects in birds-eye view (BEV).</td>
+          <td style="width: 50%"><code>detect_objects()</code></td>
+          <td style="width: 50%">Detects trained objects in the birds-eye view (BEV).</td>
         </tr>
     </table>
     </td>
@@ -230,20 +233,20 @@
                                                  Description
     ------------------------------------------------------------------------------------------------------------>
     <td>
-      Evaluate performance of object detection.
+      Evaluates performance of object detection.
     </td>
     <!----------------------------------------------------------------------------------------------------------
                                                    Methods
     ------------------------------------------------------------------------------------------------------------>
     <td rowspan="2">
-      <table>
+      <table style="table-layout: fixed; width: 100%">
         <tr>
-          <td width="35%"><code>measure_detection_performance()</code></td>
-          <td>Computes various performance measures to assess<br>object detection.</td>
+          <td style="width: 50%"><code>measure_detection_performance()</code></td>
+          <td style="width: 50%">Computes various performance<br>measures to assess object<br>detection.</br></td>
         </tr>
         <tr>
-          <td><code>compute_performance_stats()</code></td>
-          <td>Evaluates object detection performance based on<br>all frames.</td>
+          <td style="width: 50%"><code>compute_performance_stats()</code></td>
+          <td style="width: 50%">Evaluates object detection<br>performance based on all frames.</td>
         </tr>
     </table>
     </td>
@@ -269,28 +272,28 @@
                                                  Description
     ------------------------------------------------------------------------------------------------------------>
     <td>
-      Process the point-cloud and prepare it for object detection.
+      Processes the point-cloud and prepare it for object detection.
     </td>
     <!----------------------------------------------------------------------------------------------------------
                                                    Methods
     ------------------------------------------------------------------------------------------------------------>
     <td rowspan="2">
-      <table>
+      <table style="table-layout: fixed; width: 100%">
         <tr>
-          <td width="50%"><code>show_pcl()</code></td>
-          <td>Visualize lidar point-cloud.</td>
+          <td style="width: 50%"><code>show_pcl()</code></td>
+          <td style="width: 50%">Visualizes <b>LiDAR point-cloud</b>.</td>
         </tr>
         <tr>
-          <td><code>show_range_image()</code></td>
-          <td>Visualizes range image.</td>
+          <td style="width: 50%"><code>show_range_image()</code></td>
+          <td style="width: 50%">Visualizes <b>range image</b>.</td>
         </tr>
         <tr>
-          <td><code>bev_from_pcl()</code></td>
-          <td>Creates birds-eye view of lidar data.</td>
+          <td style="width: 50%"><code>bev_from_pcl()</code></td>
+          <td style="width: 50%">Creates the LiDAR birds-eye view from LiDAR point-cloud.</td>
         </tr>
         <tr>
-          <td><code>create_model()</code></td>
-          <td>Creates model according to selected model type.</td>
+          <td style="width: 50%"><code>create_model()</code></td>
+          <td style="width: 50%">Creates model according to selected model type.</td>
         </tr>
     </table>
     </td>
@@ -323,42 +326,42 @@
                                                    Methods
     ------------------------------------------------------------------------------------------------------------>
     <td rowspan="2">
-      <table>
+      <table style="table-layout: fixed; width: 100%">
         <tr>
-          <td width="45%"><code><b>Track</b>.set_x()</code></td>
-          <td>Replaces fixed track initialization values by<br>initialization of x based on unassigned<br>measurement transformed from<br>sensor to vehicle coordinates.</td>
+          <td style="width: 50%"><code><b>Track</b>.set_x()</code></td>
+          <td style="width: 50%">Replaces fixed track initialization values by<br>initialization of x based on unassigned<br>measurement transformed from<br>sensor to vehicle coordinates.</td>
         </tr>
         <tr>
-          <td><code><b>Track</b>.set_P()</code></td>
-          <td>Replaces fixed track initialization values by<br>initialization of P based on unassigned<br>measurement transformed from<br>sensor to vehicle coordinates.</td>
+          <td style="width: 50%"><code><b>Track</b>.set_P()</code></td>
+          <td style="width: 50%">Replaces fixed track initialization values by<br>initialization of P based on unassigned<br>measurement transformed from<br>sensor to vehicle coordinates.</td>
         </tr>
         <tr>
-          <td><code><b>Track</b>.set_t()</code></td>
-          <td>Creates birds-eye view of lidar data.</td>
+          <td style="width: 50%"><code><b>Track</b>.set_t()</code></td>
+          <td style="width: 50%">Creates birds-eye view of lidar data.</td>
         </tr>
         <tr>
-          <td><code><b>Track</b>.update_attributes()</code></td>
-          <td>Creates model according to selected model type.</td>
+          <td style="width: 50%"><code><b>Track</b>.update_attributes()</code></td>
+          <td style="width: 50%">Creates model according to selected.</td>
         </tr>
         <tr>
-          <td><code><b>Trackmanagement</b>.manage_tracks()</code></td>
-          <td>Creates model according to selected model type.</td>
+          <td style="width: 50%"><code><b>Trackmanagement</b>.manage_tracks()</code></td>
+          <td style="width: 50%">Creates model according to selected.</td>
         </tr>
         <tr>
-          <td><code><b>Trackmanagement</b>.addTrackToList()</code></td>
-          <td>Adds a track to the <code>track_list</code> using its <code>id</code>.</td>
+          <td style="width: 50%"><code><b>Trackmanagement</b>.addTrackToList()</code></td>
+          <td style="width: 50%">Adds a track to the <code>track_list</code>.</td>
         </tr>        
         <tr>
-          <td><code><b>Trackmanagement</b>.init_track()</code></td>
-          <td>Initializes a track based on its <code>meas</code> and <code>id</code>.</td>
+          <td style="width: 50%"><code><b>Trackmanagement</b>.init_track()</code></td>
+          <td style="width: 50%">Initializes a track based on its <code>meas</code> and <code>id</code>.</td>
         </tr>        
         <tr>
-          <td><code><b>Trackmanagement</b>.delete_track()</code></td>
-          <td>Deletes a track using its <code>id</code>.</td>
+          <td style="width: 50%"><code><b>Trackmanagement</b>.delete_track()</code></td>
+          <td style="width: 50%">Deletes a track from the <code>track_list</code>.</td>
         </tr>        
         <tr>
-          <td><code><b>Trackmanagement</b>.handle_updated_track()</code></td>
-          <td>Implements track management for updated<br>tracks by increasing the track score and set<br>track state to 'tentative' or 'confirmed'.</td>
+          <td style="width: 50%"><code><b>Trackmanagement</b>.handle_updated_track()</code></td>
+          <td style="width: 50%">Implements track management for updated<br>tracks by increasing the track score and set<br>track state to 'tentative' or 'confirmed'.</td>
         </tr>
     </table>
     </td>
