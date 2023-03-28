@@ -19,7 +19,7 @@
                                                    File
     ------------------------------------------------------------------------------------------------------------>
     <td>
-      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="13%">
+      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="20%"><br>
       <code>association.py</code>
     </td>
     <!----------------------------------------------------------------------------------------------------------
@@ -70,7 +70,7 @@
                                                    File
     ------------------------------------------------------------------------------------------------------------>
     <td>
-      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="13%">
+      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="20%"><br>
       <code>filter.py</code>
     </td>
     <!----------------------------------------------------------------------------------------------------------
@@ -125,7 +125,7 @@
                                                    File
     ------------------------------------------------------------------------------------------------------------>
     <td>
-      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="13%">
+      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="20%"><br>
       <code>measurements.py</code>
     </td>
     <!----------------------------------------------------------------------------------------------------------
@@ -140,19 +140,19 @@
     <td rowspan="2">
       <table>
         <tr>
-          <td width="39%"><code>Sensor.in_fov()</code></td>
+          <td width="39%"><code><b>Sensor</b>.in_fov()</code></td>
           <td>Checks if an object x can be seen by this sensor<br>(i.e., it's in Field of View of the sensor).</td>
         </tr>
         <tr>
-          <td><code>Sensor.get_hx()</code></td>
+          <td><code><b>Sensor</b>.get_hx()</code></td>
           <td>Calculates nonlinear measurement expectation value h(x).</td>
         </tr>
         <tr>
-          <td><code>Sensor.get_H()</code></td>
+          <td><code><b>Sensor</b>.get_H()</code></td>
           <td>Predicts state x and estimation error covariance P<br>to next timestep, saves x and P in track.</td>
         </tr>
         <tr>
-          <td><code>Sensor.generate_measurement()</code></td>
+          <td><code><b>Sensor</b>.generate_measurement()</code></td>
           <td>Updates state x and covariance P with associated<br>measurement, saves x and P in track.</td>
         </tr>
     </table>
@@ -172,7 +172,7 @@
                                                    File
     ------------------------------------------------------------------------------------------------------------>
     <td>
-      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="13%">
+      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="20%"><br>
       <code>objdet_detect.py</code>
     </td>
     <!----------------------------------------------------------------------------------------------------------
@@ -223,7 +223,7 @@
                                                    File
     ------------------------------------------------------------------------------------------------------------>
     <td>
-      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="13%">
+      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="20%"><br>
       <code>objdet_eval.py</code>
     </td>
     <!----------------------------------------------------------------------------------------------------------
@@ -262,7 +262,7 @@
                                                    File
     ------------------------------------------------------------------------------------------------------------>
     <td>
-      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="13%">
+      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="20%"><br>
       <code>objdet_pcl.py</code>
     </td>
     <!----------------------------------------------------------------------------------------------------------
@@ -310,7 +310,7 @@
                                                    File
     ------------------------------------------------------------------------------------------------------------>
     <td>
-      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="13%">
+      <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="20%"><br>
       <code>trackmanagement.py</code>
     </td>
     <!----------------------------------------------------------------------------------------------------------
@@ -325,40 +325,40 @@
     <td rowspan="2">
       <table>
         <tr>
-          <td><code>Track.set_x()</code></td>
-          <td>Replaces fixed track initialization values by initialization<br>of x based on unassigned measurement transformed<br>from sensor to vehicle coordinates.</td>
+          <td width="45%"><code><b>Track</b>.set_x()</code></td>
+          <td>Replaces fixed track initialization values by<br>initialization of x based on unassigned<br>measurement transformed from<br>sensor to vehicle coordinates.</td>
         </tr>
         <tr>
-          <td><code>Track.set_P()</code></td>
-          <td>Replaces fixed track initialization values by initialization<br>of P based on unassigned measurement transformed<br>from sensor to vehicle coordinates.</td>
+          <td><code><b>Track</b>.set_P()</code></td>
+          <td>Replaces fixed track initialization values by<br>initialization of P based on unassigned<br>measurement transformed from<br>sensor to vehicle coordinates.</td>
         </tr>
         <tr>
-          <td><code>Track.set_t()</code></td>
+          <td><code><b>Track</b>.set_t()</code></td>
           <td>Creates birds-eye view of lidar data.</td>
         </tr>
         <tr>
-          <td><code>Track.update_attributes()</code></td>
+          <td><code><b>Track</b>.update_attributes()</code></td>
           <td>Creates model according to selected model type.</td>
         </tr>
         <tr>
-          <td><code>Trackmanagement.manage_tracks()</code></td>
+          <td><code><b>Trackmanagement</b>.manage_tracks()</code></td>
           <td>Creates model according to selected model type.</td>
         </tr>
         <tr>
-          <td><code>Trackmanagement.addTrackToList()</code></td>
-          <td>Creates model according to selected model type.</td>
+          <td><code><b>Trackmanagement</b>.addTrackToList()</code></td>
+          <td>Adds a track to the <code>track_list</code> using its <code>id</code>.</td>
         </tr>        
         <tr>
-          <td><code>Trackmanagement.init_track()</code></td>
-          <td>Creates model according to selected model type.</td>
+          <td><code><b>Trackmanagement</b>.init_track()</code></td>
+          <td>Initializes a track based on its <code>meas</code> and <code>id</code>.</td>
         </tr>        
         <tr>
-          <td><code>Trackmanagement.delete_track()</code></td>
-          <td>Creates model according to selected model type.</td>
+          <td><code><b>Trackmanagement</b>.delete_track()</code></td>
+          <td>Deletes a track using its <code>id</code>.</td>
         </tr>        
         <tr>
-          <td><code>Trackmanagement.handle_updated_track()</code></td>
-          <td>Creates model according to selected model type.</td>
+          <td><code><b>Trackmanagement</b>.handle_updated_track()</code></td>
+          <td>Implements track management for updated<br>tracks by increasing the track score and set<br>track state to 'tentative' or 'confirmed'.</td>
         </tr>
     </table>
     </td>
