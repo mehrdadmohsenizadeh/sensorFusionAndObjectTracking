@@ -14,7 +14,7 @@ Udacity | Nanodegree (0013) - Self-Driving Car Engineer | Course - Sensor Fusion
   * Fuse measurements from $\textbf{LiDAR}$ with those from $\textbf{Camera}$ and track vehicles over time.
   * Use real-world data from the Waymo Open Dataset, detect objects in 3D point clouds and apply an extended Kalman filter for sensor fusion and tracking.
   
-* Two <b>object detection models</b> were adopted for this project:
+* Two <b>object detection models</b> were adopted for this project: $\textbf{Darknet}$ and $\textbf{ResNet}$. To find more info about each model please go to <code>../tools/objdet_models</code> directory.
 
 
 
@@ -175,9 +175,9 @@ Also, the project code contains various tasks, which are detailed step-by-step i
        <code>loop_over_dataset.py</code>
      </td>
       <td>
-        Loops over all frames in a Waymo Open Dataset (<code>.tfrecord</code>) file to:<br>
-        1. <b>detect</b> and <b>track</b> objects;<br>
-        2. <b>visualize</b> those results.
+        Loops over all $\textbf{frames}$ in a Waymo Open Dataset (<code>.tfrecord</code>) file to:<br>
+        1. <b>Detect</b> and <b>track</b> objects;<br>
+        2. <b>Visualize</b> those results.
       </td>
       <td>-</td>
     </tr>
