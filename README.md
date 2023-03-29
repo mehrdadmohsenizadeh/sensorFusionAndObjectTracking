@@ -1,5 +1,5 @@
 # sensorFusionAndObjectTracking
-Udacity | Nanodegree (0013) - Self-Driving Car Engineer | Course - Sensor Fusion | Project
+Udacity | Nanodegree (0013) - Self-Driving Car Engineer | Course - Sensor Fusion | Final Project
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -8,21 +8,23 @@ Udacity | Nanodegree (0013) - Self-Driving Car Engineer | Course - Sensor Fusion
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
 ## Introduction
-* This is the project for the $\textbf{Sensor Fusion}$ course in the [Udacity Self-Driving Car Engineer Nanodegree (SDCND)](https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd0013) Program.
+* You can find this project in the [Udacity Self-Driving Car Engineer Nanodegree (SDCND)](https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd0013) Program, under the $\textbf{Sensor Fusion}$ course. It is called $\textbf{Final Project: Sensor Fusion and Tracking}$.
 
-* This project is called $\textbf{Sensor Fusion and Tracking}$, where you will:
+* In this project, you will:
   * Fuse measurements from $\textbf{LiDAR}$ with those from $\textbf{Camera}$ and track vehicles over time.
   * Use real-world data from the Waymo Open Dataset, detect objects in 3D point clouds and apply an extended Kalman filter for sensor fusion and tracking.
 
 <img src="img/img_title_1.jpeg"/>
+
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<!--                                                                      OBJECTIVES                                                                          >
+<!--                                                                      OBJECTIVES                                                                              >
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
 ## Objectives
+This project can be divided into two main parts:
 
 <table>
   <thead>
@@ -45,7 +47,7 @@ Udacity | Nanodegree (0013) - Self-Driving Car Engineer | Course - Sensor Fusion
       <td>
       1. Tracking vehicles over time based on the LiDAR detections fused with camera detections, using an $\textbf{Extended Kalman}$ $\textbf{Filter (EKF)}$. 
       <br></br>
-      2. Implementing data $\textbf{association}$ and $\textbf{track management}$.
+      2. Implementing $\textbf{data association}$ and $\textbf{track management}$.
       </td>
     </tr>
   </tbody>
@@ -65,9 +67,10 @@ Also, the project code contains various tasks, which are detailed step-by-step i
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
 ## Repo structure
 
-* In this project, we will deal with different file formats (e.g., <code>.py</code>, <code>.tfrecord</code>, <code>.pkl</code>, <code>.proto</code>, <code>.png</code>, <code>.mp4</code>, <code>.cfg</code>, <code>.pth</code>, <code>.dockerfile</code>).
+* In this project, we will deal with different file formats (e.g., <code>.py</code>, <code>.tfrecord</code>, <code>.pkl</code>, <code>.proto</code>, <code>.png</code>, <code>.cfg</code>, <code>.pth</code>, <code>.dockerfile</code>).
 
-* This repo contains the following directories and files. You can find more information about sub-directories and/or files of each directory by clicking on that directory and reading its <code>README.md</code> file:
+* This repo contains the following directories and files:
+> 💡 <b>Note:</b> Learn more about sub-directories and/or files of each directory by clicking on that directory and reading its <code>README.md</code> file.
 
 <table>
   <thead>
@@ -80,9 +83,16 @@ Also, the project code contains various tasks, which are detailed step-by-step i
   <tbody>
     <tr>
       <td>📁<code>dataset</code></td>
-      <td>Contains the <a href="https://console.cloud.google.com/storage/browser/waymo_open_dataset_v_1_2_0_individual_files;tab=objects?pli=1&prefix=&forceOnObjectsSortingFiltering=false&pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))">Waymo Open Dataset</a> sequences.
+      <td>Contains the <a href="https://console.cloud.google.com/storage/browser/waymo_open_dataset_v_1_2_0_individual_files;tab=objects?pli=1&prefix=&forceOnObjectsSortingFiltering=false&pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))">Waymo Open Dataset</a> sequences in the <code>.tfrecord</code> format.
       </td>
-      <td></td>
+      <td>
+       <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%"><code>.tfrecord</code><br>
+       .<br>
+       .<br>
+       .<br>
+       <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%"><code>.tfrecord</code><br>
+       <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%"><code>README.md</code>  
+      </td>
     </tr>
     <tr>
       <td>📁<code>img</code></td>
@@ -96,7 +106,8 @@ Also, the project code contains various tasks, which are detailed step-by-step i
        <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%"><code>evaluation.py</code><br>
        <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%"><code>helpers.py</code><br>
        <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%"><code>objdet_tools.py</code><br>
-       <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%"><code>params.py</code>
+       <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%"><code>params.py</code><br>
+       <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%"><code>README.md</code>
      </td>
     </tr>
     <tr>
@@ -107,7 +118,8 @@ Also, the project code contains various tasks, which are detailed step-by-step i
       <td>
       📁<code>results_sequence_1_resnet</code><br>
       📁<code>results_sequence_2_resnet</code><br>
-      📁<code>results_sequence_3_resnet</code>
+      📁<code>results_sequence_3_resnet</code><br>
+      <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%"><code>README.md</code>
       </td>
     </tr>
     <tr>
@@ -121,6 +133,7 @@ Also, the project code contains various tasks, which are detailed step-by-step i
       <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%"><code>objdet_eval.py</code><br>
       <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%"><code>objdet_pcl.py</code><br>
       <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%"><code>trackmanagement.py</code><br>
+      <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%"><code>README.md</code>
       </td>
     </tr>
     <tr>
@@ -132,7 +145,8 @@ Also, the project code contains various tasks, which are detailed step-by-step i
       </td>
       <td>
        📁<code>objdet_models</code><br>
-       📁<code>waymo_reader</code>
+       📁<code>waymo_reader</code><br>
+       <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%"><code>README.md</code>  
       </td>
     </tr>
     <tr>
@@ -157,8 +171,9 @@ Also, the project code contains various tasks, which are detailed step-by-step i
        <code>loop_over_dataset.py</code>
      </td>
       <td>
-        Loops over all frames in a Waymo Open Dataset file,<br>
-        <b>detects</b> and <b>tracks</b> objects and <b>visualizes</b> results.
+        Loops over all frames in a Waymo Open Dataset (<code>.tfrecord</code>) file to:<br>
+        1. <b>detect</b> and <b>track</b> objects;<br>
+        2. <b>visualize</b> those results.
       </td>
       <td>-</td>
     </tr>
