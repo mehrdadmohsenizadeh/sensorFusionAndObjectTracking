@@ -1,17 +1,28 @@
 # sensorFusionAndObjectTracking
-Udacity | Nanodegree | Self Driving Car Engineer | CH03 - Sensor Fusion | Project
+Udacity | Nanodegree (0013) - Self-Driving Car Engineer | Course - Sensor Fusion | Project
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--                                                                      INTRODUCTION                                                                          >
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+## Introduction
+* This is the project for the $\textbf{Sensor Fusion}$ course in the [Udacity Self-Driving Car Engineer Nanodegree (SDCND)](https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd0013) Program.
 
-
-# Sensor Fusion and Tracking (SDCND)
-This is the project for the second course in the [Udacity Self-Driving Car Engineer Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213) : Sensor Fusion and Tracking. 
-
-In this project, you will:
-* Fuse measurements from $\text{LiDAR}$ and $\text{Camera}$ and track vehicles over time.
-* Use real-world data from the Waymo Open Dataset, detect objects in 3D point clouds and apply an extended Kalman filter for sensor fusion and tracking.
+* This project is called $\textbf{Sensor Fusion and Tracking}$, where you will:
+  * Fuse measurements from $\textbf{LiDAR}$ with those from $\textbf{Camera}$ and track vehicles over time.
+  * Use real-world data from the Waymo Open Dataset, detect objects in 3D point clouds and apply an extended Kalman filter for sensor fusion and tracking.
 
 <img src="img/img_title_1.jpeg"/>
-
-The project consists of two major parts: 
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--                                                                      OBJECTIVES                                                                          >
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+## Objectives
 
 <table>
   <thead>
@@ -22,19 +33,19 @@ The project consists of two major parts:
   </thead>
   <tbody>
     <tr>
-      <td>Object detection</td>
+      <td>Object<br>detection</td>
       <td>
       1. Detecting vehicles in LiDAR data based on a $\textbf{Birds-Eye View (BEV)}$ perspective of the 3D $\textbf{Point-Cloud (PCL)}$, using a deep-learning approach.
-      <br>
+      <br></br>
       2. Evaluating the performance of the detections, using a series of performance measures. 
       </td>
     </tr>
     <tr>
-      <td>Object tracking</td>
+      <td>Object<br>tracking</td>
       <td>
-      1. Tracking vehicles over time based on the lidar detections fused with camera detections, using an $\textbf{Extended Kalman}$ $\textbf{Filter (EKF)}$. 
-      <br>
-      2. implementing data association and track management.
+      1. Tracking vehicles over time based on the LiDAR detections fused with camera detections, using an $\textbf{Extended Kalman}$ $\textbf{Filter (EKF)}$. 
+      <br></br>
+      2. Implementing data $\textbf{association}$ and $\textbf{track management}$.
       </td>
     </tr>
   </tbody>
@@ -45,8 +56,18 @@ The following diagram contains an outline of the data flow and of the individual
 <img src="img/img_title_2_new.png"/>
 
 Also, the project code contains various tasks, which are detailed step-by-step in the code. More information on the algorithm and on the tasks can be found in the Udacity classroom. 
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--                                                                      FILE STRUCTURE                                                                          >
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+## Repo structure
 
-## Project File Structure
+* In this project, we will deal with different file formats (e.g., <code>.py</code>, <code>.tfrecord</code>, <code>.pkl</code>, <code>.proto</code>, <code>.png</code>, <code>.mp4</code>, <code>.cfg</code>, <code>.pth</code>, <code>.dockerfile</code>).
+
+* This repo contains the following directories and files. You can find more information about sub-directories and/or files of each directory by clicking on that directory and reading its <code>README.md</code> file:
 
 <table>
   <thead>
@@ -81,7 +102,7 @@ Also, the project code contains various tasks, which are detailed step-by-step i
     <tr>
       <td>📁<code>results</code></td>
       <td>
-      Contains binary files with pre-computed intermediate results.
+      Contains binary (<code>.pkl</code>) files with pre-computed intermediate results.
       </td>
       <td>
       📁<code>results_sequence_1_resnet</code><br>
@@ -152,9 +173,9 @@ Also, the project code contains various tasks, which are detailed step-by-step i
     <tr>
       <td style="vertical-align: middle">
        <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%">
-       <code>requirements.md</code>
+       <code>requirements.txt</code>
      </td>
-      <td></td>
+      <td>A list of all of a project's dependencies. This includes the dependencies needed by the dependencies.</td>
       <td>-</td>
     </tr>
     <tr>
@@ -170,15 +191,7 @@ Also, the project code contains various tasks, which are detailed step-by-step i
 
 
 📦project<br>
- ┣ 📂student <br>
- ┃ ┣ association.py --> data association logic for assigning measurements to tracks incl. student tasks <br>
- ┃ ┣ filter.py --> extended Kalman filter implementation incl. student tasks <br>
- ┃ ┣ measurements.py --> sensor and measurement classes for camera and lidar incl. student tasks <br>
- ┃ ┣ objdet_detect.py --> model-based object detection incl. student tasks <br>
- ┃ ┣ objdet_eval.py --> performance assessment for object detection incl. student tasks <br>
- ┃ ┣ objdet_pcl.py --> point-cloud functions, e.g. for birds-eye view incl. student tasks <br>
- ┃ ┗ trackmanagement.py --> track and track management classes incl. student tasks  <br>
- ┃ <br>
+ 
  ┣ 📂tools --> external tools<br>
  ┃ ┣ 📂objdet_models --> models for object detection<br>
  ┃ ┃ ┃<br>
@@ -196,8 +209,13 @@ Also, the project code contains various tasks, which are detailed step-by-step i
  ┃ ┃ ┃ ┣ 📂utils --> various helper functions<br>
  ┃ ┃ ┃<br>
  ┃ ┗ 📂waymo_reader --> functions for light-weight loading of Waymo sequences<br>
-
-
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--                                                                      INSTALLATION                                                                          >
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
 ## Installation Instructions for Running Locally
 ### Cloning the Project
 In order to create a local copy of the project, please click on "Code" and then "Download ZIP". Alternatively, you may of-course use GitHub Desktop or Git Bash for this purpose. 
@@ -206,8 +224,11 @@ In order to create a local copy of the project, please click on "Code" and then 
 The project has been written using Python 3.7. Please make sure that your local installation is equal or above this version. 
 
 ### Package Requirements
-All dependencies required for the project have been listed in the file `requirements.txt`. You may either install them one-by-one using pip or you can use the following command to install them all at once: 
-`pip3 install -r requirements.txt` 
+All dependencies required for the project have been listed in the file `requirements.txt`. You may install them from <code>terminal</code> using either of these approaches:
+  * Individually (e.g., <code>pip3 install numpy</code>.
+  * All at once, using `pip3 install -r requirements.txt`.
+  	
+      💡 <b>Note:</b> In the second case, if you moved the <code>requirements.txt</code> file from the root directory, you'll need to provide its full path to be able run this command and install packages, successfully.
 
 ### Waymo Open Dataset Reader
 The Waymo Open Dataset Reader is a very convenient toolbox that allows you to access sequences from the Waymo Open Dataset without the need of installing all of the heavy-weight dependencies that come along with the official toolbox. The installation instructions can be found in `tools/waymo_reader/README.md`. 
