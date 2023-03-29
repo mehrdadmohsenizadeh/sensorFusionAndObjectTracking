@@ -16,30 +16,7 @@ Udacity | Nanodegree (0013) - Self-Driving Car Engineer | Course - Sensor Fusion
   
 * Two <b>object detection models</b> were adopted for this project:
 
-<table>
-  <thead>
-    <tr>
-      <th>Model</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Darknet</td>
-      <td>
-      <li> An open source neural network (NN) framework which is fast and highly accurate (accuracy for custom trained model depends on training data, epochs, batch size and other factors) framework for real time object detection (also can be used for images). It is fast because it is written in $\textbf{C}$ and $\textbf{CUDA}$.<br>
-      <li> Find more info about this model under directory <code>../tools/objdet_models/darkent</code>.
-      </td>
-    </tr>
-    <tr>
-      <td>ResNet</td>
-      <td>
-      <li> A deep convolutional neural network (CNN) architecture that uses $\textbf{residual connections}$ to enable the training of very deep networks. In object detection, a $\textbf{ResNet}$ model is typically used as a backbone network to <b>extract features</b> from an input image, which are then fed into an object detection head to predict <b>bounding boxes</b> and class labels for objects in the image. ResNet models have achieved state-of-the-art performance in object detection tasks and are widely used in research and industry.
-      <li> Find more info about this model under directory <code>../tools/objdet_models/resent</code>.
-      </td>
-    </tr>
-  </tbody>
-</table>
+
 
 <img src="img/img_title_1.jpeg"/>
 
