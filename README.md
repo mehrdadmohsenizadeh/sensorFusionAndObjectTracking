@@ -74,8 +74,8 @@ Also, the project code contains various tasks, which are detailed step-by-step i
 * In this project, we will deal with different file formats (e.g., <code>.py</code>, <code>.tfrecord</code>, <code>.pkl</code>, <code>.proto</code>, <code>.png</code>, <code>.cfg</code>, <code>.pth</code>, <code>.dockerfile</code>).
 
 * This repo contains the following directories and files:
-> 💡 <b>Note:</b> Learn more about sub-directories and/or files of each directory by clicking on that directory and reading its <code>README.md</code> file.
 
+💡 <b>Note:</b> Learn more about sub-directories and/or files of each directory by clicking on that directory and reading its <code>README.md</code> file.
 <table>
   <thead>
     <tr>
