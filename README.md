@@ -79,9 +79,9 @@ Also, the project code contains various tasks, which are detailed step-by-step i
 <table>
   <thead>
     <tr>
-      <th width="30%">Directories/Files</th>
+      <th width="30%">Folder/File</th>
       <th width="40%">Description</th>
-      <th width="30%">Sub-directories/Files</th>
+      <th width="30%">Sub-Folders/Files</th>
     </tr>
   </thead>
   <tbody>
@@ -100,8 +100,8 @@ Also, the project code contains various tasks, which are detailed step-by-step i
     </tr>
     <tr>
       <td>📁<code>img</code></td>
-      <td></td>
-      <td></td>
+      <td>Contains all images, icons, logos, etc. for this project.</td>
+      <td>See this folder for more info.</td>
     </tr>
     <tr>
       <td>📁<code>misc</code></td>
@@ -117,7 +117,7 @@ Also, the project code contains various tasks, which are detailed step-by-step i
     <tr>
       <td>📁<code>results</code></td>
       <td>
-      Contains binary (<code>.pkl</code>) files with pre-computed intermediate results.
+      Contains binary files with pre-computed intermediate results in the <code>.pkl</code> format.
       </td>
       <td>
       📁<code>results_sequence_1_resnet</code><br>
@@ -175,7 +175,7 @@ Also, the project code contains various tasks, which are detailed step-by-step i
        <code>loop_over_dataset.py</code>
      </td>
       <td>
-        Loops over all $\textbf{frames}$ in a Waymo Open Dataset (<code>.tfrecord</code>) file to:<br>
+        Loops over all $\textbf{frames}$ in a Waymo Open Dataset file (a (<code>.tfrecord</code>) file located in the ../dataset directory) to:<br>
         1. <b>Detect</b> and <b>track</b> objects;<br>
         2. <b>Visualize</b> those results.
       </td>
