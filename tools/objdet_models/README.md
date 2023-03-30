@@ -53,7 +53,6 @@
       <td>
       <li> An open source neural network (NN) framework which is fast and highly accurate (accuracy for custom trained model depends on training data, epochs, batch size and other factors) framework for real time object detection (also can be used for images). It is fast because it is written in $\textbf{C}$ and $\textbf{CUDA}$.
       <li> The $\textbf{Complex-YOLOv4}$ model adds complexity to the standard $\textbf{YOLOv4}$ model by incorporating more feature extraction modules, including the $\textbf{CSPDarknet53 backbone}$ and $\textbf{Spatial Attention Module}$, to improve detection accuracy. However, it is still built on the same architecture as YOLOv4, which consists of a $\textbf{backbone}$ network, $\textbf{neck}$, and $\textbf{head}$.
-      <li> In object detection, a $\textbf{ResNet}$ model is typically used as a $\textbf{backbone}$ network to $\textbf{extract features}$ from an input image, which are then fed into an object detection $\textbf{head}$ (here, the $\textbf{Complex-YOLOv4}$ model) to predict $\textbf{bounding boxes (bb)}$ and $\textbf{class labels}$ for objects in the image.
       </td>
     </tr>
     <tr>
@@ -61,7 +60,7 @@
       <td>
       <li> A deep neural network architecture that combines two popular convolutional neural networks (CNNs):$
         <ol>
-        <li> $\textbf{ResNet}$: A deep CNN architecture that introduces the concept of $\textbf{residual blocks}$ and $\textbf{residual (skip) connections}$, which help to alleviate the $\textbf{vanishing gradient problem}$ during training.
+        <li> $\textbf{ResNet}$: A deep CNN architecture that introduces the concept of $\textbf{residual blocks}$ and $\textbf{residual (skip) connections}$, which help to alleviate the $\textbf{vanishing gradient problem}$ during training. In object detection, a $\textbf{ResNet}$ model is typically used as a $\textbf{backbone}$ network to $\textbf{extract features}$ from an input image, which are then fed into an object detection $\textbf{head}$ to predict $\textbf{bounding boxes (bb)}$ and $\textbf{class labels}$ for objects in the image.
         <li> $\textbf{FPN}$: A $\textbf{feature extraction}$ architecture that enhances the feature representation of an input image by using a pyramid of multi-scale feature maps.
         </ol>
       <li> The $\textbf{FPN-ResNet}$ model takes advantage of the strengths of both architectures to improve $\textbf{object detection}$ and $\textbf{semantic segmentation}$ tasks. In this architecture:
