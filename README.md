@@ -41,7 +41,7 @@ This project can be divided into two main parts:
     <tr>
       <td>Object<br>detection</td>
       <td>
-      1. Detecting vehicles in LiDAR data based on a $\textbf{Birds-Eye View (BEV)}$ perspective of the 3D $\textbf{Point-Cloud (PCL)}$, using a deep-learning approach.
+      1. Detecting vehicles in LiDAR data based on a $\textbf{Birds-Eye View (BEV)}$ perspective of the 3D $\textbf{Point-Cloud (PCL)}$, using a deep-learning approach ($\textbf{Darknet}$ and $\textbf{ResNet}$ architectures).
       <br></br>
       2. Evaluating the performance of the detections, using a series of performance measures. 
       </td>
@@ -107,10 +107,10 @@ Also, the project code contains various tasks, which are detailed step-by-step i
       <td>📁<code>misc</code></td>
       <td></td>
       <td>
-       <img src="/img/logo_python.png" width="10%"><code>evaluation.py</code><br>
-       <img src="/img/logo_python.png" width="10%"><code>helpers.py</code><br>
-       <img src="/img/logo_python.png" width="10%"><code>objdet_tools.py</code><br>
-       <img src="/img/logo_python.png" width="10%"><code>params.py</code><br>
+       <img src="/img/icon_python.png" width="10%"><code>evaluation.py</code><br>
+       <img src="/img/icon_python.png" width="10%"><code>helpers.py</code><br>
+       <img src="/img/icon_python.png" width="10%"><code>objdet_tools.py</code><br>
+       <img src="/img/icon_python.png" width="10%"><code>params.py</code><br>
        <img src="/img/icon_file.png" width="10%"><code>README.md</code>
      </td>
     </tr>
@@ -130,13 +130,13 @@ Also, the project code contains various tasks, which are detailed step-by-step i
       <td>📁<code>student</code></td>
       <td></td>
       <td>
-      <img src="/img/logo_python.png" width="10%"><code>association.py</code><br>
-      <img src="/img/logo_python.png" width="10%"><code>filter.py</code><br>
-      <img src="/img/logo_python.png" width="10%"><code>measurements.py</code><br>
-      <img src="/img/logo_python.png" width="10%"><code>objdet_detect.py</code><br>
-      <img src="/img/logo_python.png" width="10%"><code>objdet_eval.py</code><br>
-      <img src="/img/logo_python.png" width="10%"><code>objdet_pcl.py</code><br>
-      <img src="/img/logo_python.png" width="10%"><code>trackmanagement.py</code><br>
+      <img src="/img/icon_python.png" width="10%"><code>association.py</code><br>
+      <img src="/img/icon_python.png" width="10%"><code>filter.py</code><br>
+      <img src="/img/icon_python.png" width="10%"><code>measurements.py</code><br>
+      <img src="/img/icon_python.png" width="10%"><code>objdet_detect.py</code><br>
+      <img src="/img/icon_python.png" width="10%"><code>objdet_eval.py</code><br>
+      <img src="/img/icon_python.png" width="10%"><code>objdet_pcl.py</code><br>
+      <img src="/img/icon_python.png" width="10%"><code>trackmanagement.py</code><br>
       <img src="/img/icon_file.png" width="10%"><code>README.md</code>
       </td>
     </tr>
@@ -155,7 +155,7 @@ Also, the project code contains various tasks, which are detailed step-by-step i
     </tr>
     <tr>
       <td style="vertical-align: middle">
-       <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%">
+       <img src="/img/icon_python.png" width="10%">
        <code>bsaic_loop.py</code>
      </td>
       <td></td>
@@ -171,7 +171,7 @@ Also, the project code contains various tasks, which are detailed step-by-step i
     </tr>
     <tr>
       <td style="vertical-align: middle">
-       <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="10%">
+       <img src="/img/icon_python.png" width="10%">
        <code>loop_over_dataset.py</code>
      </td>
       <td>
