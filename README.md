@@ -175,7 +175,7 @@ Also, the project code contains various tasks, which are detailed step-by-step i
        <code>loop_over_dataset.py</code>
      </td>
       <td>
-        Loops over all $\textbf{frames}$ in a Waymo Open Dataset file (a (<code>.tfrecord</code>) file located in the ../dataset directory) to:<br>
+        Loops over all $\textbf{frames}$ in a Waymo Open Dataset file (a <code>.tfrecord</code> file located in the <code>../dataset directory</code>) to:<br>
         1. <b>Detect</b> and <b>track</b> objects;<br>
         2. <b>Visualize</b> those results.
       </td>
@@ -207,27 +207,6 @@ Also, the project code contains various tasks, which are detailed step-by-step i
     </tr>
   </tbody>
 </table>
-
-
-📦project<br>
- 
- ┣ 📂tools --> external tools<br>
- ┃ ┣ 📂objdet_models --> models for object detection<br>
- ┃ ┃ ┃<br>
- ┃ ┃ ┣ 📂darknet<br>
- ┃ ┃ ┃ ┣ 📂config<br>
- ┃ ┃ ┃ ┣ 📂models --> darknet / yolo model class and tools<br>
- ┃ ┃ ┃ ┣ 📂pretrained --> copy pre-trained model file here<br>
- ┃ ┃ ┃ ┃ ┗ complex_yolov4_mse_loss.pth<br>
- ┃ ┃ ┃ ┣ 📂utils --> various helper functions<br>
- ┃ ┃ ┃<br>
- ┃ ┃ ┗ 📂resnet<br>
- ┃ ┃ ┃ ┣ 📂models --> fpn_resnet model class and tools<br>
- ┃ ┃ ┃ ┣ 📂pretrained --> copy pre-trained model file here <br>
- ┃ ┃ ┃ ┃ ┗ fpn_resnet_18_epoch_300.pth <br>
- ┃ ┃ ┃ ┣ 📂utils --> various helper functions<br>
- ┃ ┃ ┃<br>
- ┃ ┗ 📂waymo_reader --> functions for light-weight loading of Waymo sequences<br>
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
