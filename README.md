@@ -90,12 +90,12 @@ Also, the project code contains various tasks, which are detailed step-by-step i
       <td>Contains the <a href="https://console.cloud.google.com/storage/browser/waymo_open_dataset_v_1_2_0_individual_files;tab=objects?pli=1&prefix=&forceOnObjectsSortingFiltering=false&pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))">Waymo Open Dataset</a> sequences in the <code>.tfrecord</code> format.
       </td>
       <td>
-       <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%"><code>.tfrecord</code><br>
+       <img src="/img/icon_file.png" width="10%"><code>.tfrecord</code><br>
        .<br>
        .<br>
        .<br>
-       <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%"><code>.tfrecord</code><br>
-       <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%"><code>README.md</code>  
+       <img src="/img/icon_file.png" width="10%"><code>.tfrecord</code><br>
+       <img src="/img/icon_file.png" width="10%"><code>README.md</code>  
       </td>
     </tr>
     <tr>
@@ -111,7 +111,7 @@ Also, the project code contains various tasks, which are detailed step-by-step i
        <img src="/img/logo_python.png" width="10%"><code>helpers.py</code><br>
        <img src="/img/logo_python.png" width="10%"><code>objdet_tools.py</code><br>
        <img src="/img/logo_python.png" width="10%"><code>params.py</code><br>
-       <img src="/img/logo_python.png" width="10%"><code>README.md</code>
+       <img src="/img/icon_file.png" width="10%"><code>README.md</code>
      </td>
     </tr>
     <tr>
@@ -123,7 +123,7 @@ Also, the project code contains various tasks, which are detailed step-by-step i
       📁<code>results_sequence_1_resnet</code><br>
       📁<code>results_sequence_2_resnet</code><br>
       📁<code>results_sequence_3_resnet</code><br>
-      <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%"><code>README.md</code>
+      <img src="/img/icon_file.png" width="10%"><code>README.md</code>
       </td>
     </tr>
     <tr>
@@ -137,7 +137,7 @@ Also, the project code contains various tasks, which are detailed step-by-step i
       <img src="/img/logo_python.png" width="10%"><code>objdet_eval.py</code><br>
       <img src="/img/logo_python.png" width="10%"><code>objdet_pcl.py</code><br>
       <img src="/img/logo_python.png" width="10%"><code>trackmanagement.py</code><br>
-      <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%"><code>README.md</code>
+      <img src="/img/icon_file.png" width="10%"><code>README.md</code>
       </td>
     </tr>
     <tr>
@@ -150,7 +150,7 @@ Also, the project code contains various tasks, which are detailed step-by-step i
       <td>
        📁<code>objdet_models</code><br>
        📁<code>waymo_reader</code><br>
-       <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%"><code>README.md</code>  
+       <img src="/img/icon_file.png" width="10%"><code>README.md</code>  
       </td>
     </tr>
     <tr>
@@ -163,7 +163,7 @@ Also, the project code contains various tasks, which are detailed step-by-step i
     </tr>
     <tr>
       <td style="vertical-align: middle">
-       <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%">
+       <img src="/img/icon_file.png" width="10%">
        <code>LICENSE.md</code>
      </td>
       <td></td>
@@ -183,7 +183,7 @@ Also, the project code contains various tasks, which are detailed step-by-step i
     </tr>
     <tr>
       <td style="vertical-align: middle">
-       <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%">
+       <img src="/img/icon_file.png" width="10%">
        <code>README.md</code>
      </td>
       <td></td>
@@ -191,7 +191,7 @@ Also, the project code contains various tasks, which are detailed step-by-step i
     </tr>
     <tr>
       <td style="vertical-align: middle">
-       <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%">
+       <img src="/img/icon_file.png" width="10%">
        <code>requirements.txt</code>
      </td>
       <td>A list of all of a project's dependencies. This includes the dependencies needed by the dependencies.</td>
@@ -199,7 +199,7 @@ Also, the project code contains various tasks, which are detailed step-by-step i
     </tr>
     <tr>
       <td style="vertical-align: middle">
-       <img src="https://www.iconpacks.net/icons/2/free-file-icon-1453-thumb.png" width="10%">
+       <img src="/img/icon_file.png" width="10%">
        <code>writeup.md</code>
      </td>
       <td></td>
