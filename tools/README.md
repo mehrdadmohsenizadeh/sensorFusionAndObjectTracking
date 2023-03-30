@@ -10,7 +10,12 @@
   <tbody>
     <tr>
       <td>📁<code>objdet_models</code></td>
-      <td>Contains the $\textbf{object detection models}$ used in this project (i.e., $\textbf{Darknet}$ and $\textbf{ResNet}$).</td>
+      <td>Contains the $\textbf{object detection models}$ used in this project :
+      <ol>
+      <li> $\textbf{Darknet + Complex-YOLOv4}$ </li>
+      <li> $\textbf{FPN-ResNet}$ </li>
+      </ol>
+      </td>
       <td>
       📁<code>darknet</code>
       <br>
@@ -31,7 +36,7 @@
       <br>
       📁<code>simple_waymo_open_dataset_reader</code>
       <br>
-      <img src="../img/icon_shell.png" width="8%"><code>generate_proto</code>
+      <img src="../img/icon_shell.png" width="8%"><code>generate_proto.sh</code>
       <br>
       <img src="../img/icon_file.png" width="8%"><code>LICENSE.md</code>
       <br>
