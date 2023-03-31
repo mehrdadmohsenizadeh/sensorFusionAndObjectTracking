@@ -129,9 +129,9 @@
   </thead>
   <tbody>
     <tr>
-    <td>Darknet</td>
+    <td>Darknet53</td>
     <td>-</td>
-    <td>-</td>
+    <td><a href="https://github.com/developer0hye/PyTorch-Darknet53">GitHub repo</a></td>
     <td><a href="https://pjreddie.com/darknet/">Website</a></td>
     </tr>
     <tr>
@@ -151,5 +151,17 @@
     <td><a href="https://arxiv.org/abs/1612.03144">Original paper</a></td>
     <td><a href="https://github.com/kuangliu/pytorch-fpn">GitHub repo</a></td>
     <td>-</td>
+    </tr>
+    <tr>
+    <td>YOLOv4</td>
+    <td><a href="https://arxiv.org/abs/1612.03144">Original paper</a></td>
+    <td><a href="https://github.com/AlexeyAB/darknet">GitHub repo</a></td>
+    <td><a href="https://medium.com/@alexeyab84/yolov4-the-most-accurate-real-time-neural-network-on-ms-coco-dataset-73adfd3602fe?source=friends_link&sk=6039748846bbcf1d960c3061542591d7">Medium</a></td>
+    </tr>
+    <tr>
+    <td>LeakyReLU</td>
+    <td><a href="https://arxiv.org/abs/1505.00853">Original paper</a></td>
+    <td>-</td>
+    <td><a href="https://en.wikipedia.org/wiki/Rectifier_(neural_networks)">Wikipedia</a></td>
     </tr>
 
