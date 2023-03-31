@@ -1,4 +1,4 @@
-# Folder sructure
+# Folder Sructure
 
 
 <table>
@@ -116,3 +116,40 @@
     </tr>
   </tbody>
 </table>
+
+# Resources
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Resource 1</th>
+      <th>Resource 2</th>
+      <th>Resource 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td>Darknet</td>
+    <td>-</td>
+    <td>-</td>
+    <td><a href="https://pjreddie.com/darknet/">Website</a></td>
+    </tr>
+    <tr>
+    <td>Complex-YOLOv4</td>
+    <td><a href="https://arxiv.org/pdf/1803.06199.pdf">Original paper</a></td>
+    <td><a href="https://github.com/maudzung/Complex-YOLOv4-Pytorch">GitHub repo</a></td>
+    <td>-</td>
+    </tr>
+    <tr>
+    <td>ResNet</td>
+    <td><a href="https://arxiv.org/abs/1512.03385">Original paper</a></td>
+    <td><a href="https://github.com/KaimingHe/deep-residual-networks">GitHub repo</a></td>
+    <td>-</td>
+    </tr>
+    <tr>
+    <td>FPN</td>
+    <td><a href="https://arxiv.org/abs/1612.03144">Original paper</a></td>
+    <td><a href="https://github.com/kuangliu/pytorch-fpn">GitHub repo</a></td>
+    <td>-</td>
+    </tr>
+
