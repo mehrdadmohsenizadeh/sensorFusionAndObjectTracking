@@ -20,7 +20,7 @@
     </tr>
     <tr>
       <td>📁<code>pretrained</code></td>
-      <td>Contains the <code>.pth</code> file of a pretrained $\textbf{FPN-ResNet}$ model within which the $\textbf{MSE loss}$ values of the model are saved.
+      <td>Contains the <code>.pth</code> file of a pretrained $\textbf{FPN-ResNet18}$ model within which the $\textbf{MSE loss}$ values of the model are saved.
       </td>
       <td>
         <img src="/img/icon_file_config.png" width="10%"><code>fpn_resnet_18_epoch_300.pth</code>
