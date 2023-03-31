@@ -51,30 +51,67 @@
     <tr>
       <td>$\textbf{Darknet}$<br>(with $\textbf{Complex-YOLOv4}$)</td>
       <td>
-      <li> An open source neural network (NN) framework which is fast and highly accurate (accuracy for custom trained model depends on training data, epochs, batch size and other factors) framework for real time object detection (also can be used for images). It is fast because it is written in $\textbf{C}$ and $\textbf{CUDA}$.
-      <li> The $\textbf{Complex-YOLOv4}$ model adds complexity to the standard $\textbf{YOLOv4}$ model by incorporating more feature extraction modules, including the $\textbf{CSPDarknet53 backbone}$ and $\textbf{Spatial Attention Module}$, to improve detection accuracy. However, it is still built on the same architecture as YOLOv4, which consists of a $\textbf{backbone}$ network, $\textbf{neck}$, and $\textbf{head}$.
+      <li> $\color{darkred}{\textbf{Darknet}}$ is an open source neural network (NN) framework which is fast and highly accurate (accuracy for custom trained model depends on training data, epochs, batch size and other factors) framework for real time object detection (also can be used for images). It is fast because it is written in $\textbf{C}$ and $\textbf{CUDA}$.
+      </li>
+      <br>
+      <li>
+      The Darknet architecture consists of a series of convolutional layers, followed by pooling layers, and optionally, fully connected layers. It uses the LeakyReLU
+      activation function and employs various techniques such as batch normalization, residual connections, and skip connections to improve the accuracy and speed of
+      the model.
+      </li>
+      <br>
+      <li>
+      Darknet supports both CPU and GPU acceleration and can run on Windows, Linux, and macOS platforms. It also provides tools for data preparation, model training,
+      and inference, making it a complete end-to-end solution for developing deep learning models.
+      </li>
+      <br>
+      <li>
+      The Darknet architecture, when combined with YOLO, is a powerful and efficient tool for object detection tasks and has been used in various real-world
+      applications such as autonomous driving, surveillance systems, and robotics.
+      </li>
+      <br>
+      <li> The $\color{darkred}{\textbf{Complex-YOLOv4}}$ model adds complexity to the standard $\color{darkred}{\textbf{YOLOv4}}$ model by incorporating more feature extraction modules to improve detection accuracy, including:
+      <ol>
+      <li> $\color{darkred}{\textbf{CSPDarknet53 backbone}}$
+      <li> $\color{darkred}{\textbf{Spatial Attention Module}}$
+      </ol>
+      <li> The $\color{darkred}{\textbf{Complex-YOLOv4}}$ model is still built on the same architecture as YOLOv4, which consists of a $\textbf{backbone}$ network, $\textbf{neck}$, and $\textbf{head}$.
       </td>
     </tr>
     <tr>
-      <td>$\textbf{FPN-ResNet}$</td>
+      <td>$\textbf{FPN-ResNet18}$</td>
       <td>
-      <li> A deep neural network architecture that combines two popular convolutional neural networks (CNNs):$
+      <li> A deep neural network architecture that combines two popular convolutional neural networks (CNNs) :
         <ol>
-        <li> $\textbf{ResNet}$: A deep CNN architecture that introduces the concept of $\textbf{residual blocks}$ and $\textbf{residual (skip) connections}$, which help to alleviate the $\textbf{vanishing gradient problem}$ during training. In object detection, a $\textbf{ResNet}$ model is typically used as a $\textbf{backbone}$ network to $\textbf{extract features}$ from an input image, which are then fed into an object detection $\textbf{head}$ to predict $\textbf{bounding boxes (bb)}$ and $\textbf{class labels}$ for objects in the image.
-        <li> $\textbf{FPN}$: A $\textbf{feature extraction}$ architecture that enhances the feature representation of an input image by using a $\textbf{pyramid of multi-scale feature maps}$.
+        <br>
+        <li> $\color{darkred}{\textbf{Residual Network (ResNet)}}$:
+        <br>
+        A deep CNN architecture that introduces the concept of $\textbf{residual blocks}$ and $\textbf{residual (skip) connections}$, which help to alleviate the $\textbf{vanishing gradient problem}$ during training. In object detection, a $\textbf{ResNet}$ is typically used as a $\textbf{backbone}$ network to $\textbf{extract features}$ from an input image, which are then fed into an object detection $\textbf{head}$ to predict $\textbf{bounding boxes (bb)}$ and $\textbf{class labels}$ for objects in the image.
+        <br><br>
+        <li> $\color{darkred}{\textbf{Feature Pyramid Network (FPN)}}$:
+        <br>
+        A $\textbf{feature extraction}$ architecture that is added on top of the $\textbf{ResNet}$ backbone and consists of a set of lateral connections and top-down pathways that combine the feature maps at different spatial scales to create a $\textbf{pyramid of feature maps}$. This pyramid enhances the feature representation of the input image.
         </ol>
-      <li> The $\textbf{FPN-ResNet}$ model takes advantage of the strengths of both architectures to improve $\textbf{object detection}$ and $\textbf{semantic segmentation}$ tasks. In this architecture:
+      <br>
+      <li> An $\color{darkred}{\textbf{FPN-ResNet}}$ model takes advantage of the strengths of both architectures to improve $\textbf{object detection}$ and $\textbf{semantic segmentation}$ tasks. In this architecture:
         <ol>
+        <br>
         <li>
-        First, the $\textbf{ResNet}$ is used as the $\textbf{backbone}$ network, which extracts the features of the input image.
+        First, the $\textbf{ResNet}$ (typically, a $\textbf{pre-trained ResNet}$ model) is used as the $\textbf{backbone}$ network, which extracts the features of the input image.
         </li>
+        <br>
         <li>
-        Then, the $\textbf{FPN}$ is applied to these features to create a $\textbf{pyramid of feature maps}$ with different resolutions.
+        Then, the $\textbf{FPN}$ is applied to the feature maps generated by the $\textbf{ResNet backbone}$ at different spatial scales and combines them to create a feature pyramid with multiple levels of detail (i.e., different spatial resolutions, e.g., $224\times224$ or $528\times528$ pixels). Note that the $\textbf{FPN}$ is not the $\textbf{head}$, but rather an intermediate module that is used to build a feature pyramid from the $\textbf{ResNet backbone}$.
         </li>
+        <br>
         <li>
-        Finally, this pyramid of feature maps is used for object detection or semantic segmentation tasks.
+        Finally, the feature pyramid is then used as input to the head of the network, which typically consists of a set of convolutional layers followed by a set of fully connected layers that output the final predictions. this pyramid of feature maps is used for object detection or semantic segmentation tasks.
         </li>
         </ol>
+      </li>
+      <br>
+      <li>
+      The $\textbf{ResNet18}$ architecture is a variant of the original $\textbf{ResNet}$ architecture. Here, the number $\textbf{18}$ refers to the number of layers which organized into several blocks, each with a different number of layers.
       </li>
       </td>
     </tr>
