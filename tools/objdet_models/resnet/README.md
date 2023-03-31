@@ -5,7 +5,7 @@
     <tr>
       <th width="15%">Folder</th>
       <th>Description</th>
-      <th>Sub-Folders/Files</th>
+      <th width="30%">Sub-Folders/Files</th>
     </tr>
   </thead>
   <tbody>
@@ -20,7 +20,7 @@
     </tr>
     <tr>
       <td>📁<code>pretrained</code></td>
-      <td>Contains <code>.cfg</code> and <code>.pth</code> files of a pretrained $\textbf{Complex-YOLOv4}$ model within which the $\textbf{configurations}$ and $\textbf{MSE loss}$ values of the model are saved, respectively.
+      <td>Contains the <code>.pth</code> file of a pretrained $\textbf{FPN-ResNet}$ model within which the $\textbf{MSE loss}$ values of the model are saved.
       </td>
       <td>
         <img src="/img/icon_file_config.png" width="10%"><code>fpn_resnet_18_epoch_300.pth</code>
@@ -29,9 +29,7 @@
     <tr>
       <td>📁<code>utils</code></td>
       <td>Contains useful utility tools which help to calculate the :
-        <li> Intersection of rotated boxes
         <li> Evaluation metrics
-        <li> $\textbf{Intersection of Union (IoU)}$ of rotated boxes
         <li> PyTorch utilities
       </td>
       <td>
