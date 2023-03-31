@@ -176,7 +176,7 @@ Also, the project code contains various tasks, which are detailed step-by-step i
        <code>loop_over_dataset.py</code>
      </td>
       <td>
-        Loops over all $\textbf{frames}$ in a Waymo Open Dataset file (a <code>.tfrecord</code> file located in the <code>../dataset directory</code>) to:<br>
+        Loops over all $\textbf{frames}$ in a Waymo Open Dataset file (a <code>.tfrecord</code> file located in the <code>/dataset</code> directory) to:<br>
         1. <b>Detect</b> and <b>track</b> objects;<br>
         2. <b>Visualize</b> those results.
       </td>
