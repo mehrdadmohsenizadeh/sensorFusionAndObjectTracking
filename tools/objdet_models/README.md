@@ -66,13 +66,13 @@
       <li> The $\textbf{FPN-ResNet}$ model takes advantage of the strengths of both architectures to improve $\textbf{object detection}$ and $\textbf{semantic segmentation}$ tasks. In this architecture:
         <ol>
         <li>
-        The $\textbf{ResNet}$ is used as the $\textbf{backbone}$ network, which extracts the features of the input image.
+        First, the $\textbf{ResNet}$ is used as the $\textbf{backbone}$ network, which extracts the features of the input image.
         </li>
         <li>
         Then, the $\textbf{FPN}$ is applied to these features to create a $\textbf{pyramid of feature maps}$ with different resolutions.
         </li>
         <li>
-        Finally, These pyramid of feature maps are used for object detection or semantic segmentation tasks.
+        Finally, this pyramid of feature maps is used for object detection or semantic segmentation tasks.
         </li>
         </ol>
       </li>
