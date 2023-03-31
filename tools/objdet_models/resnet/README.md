@@ -3,9 +3,9 @@
 <table>
   <thead>
     <tr>
-      <th width="20%">Folder</th>
-      <th width="42%">Description</th>
-      <th width="28%">Sub-Folders/Files</th>
+      <th width="15%">Folder</th>
+      <th>Description</th>
+      <th>Sub-Folders/Files</th>
     </tr>
   </thead>
   <tbody>
