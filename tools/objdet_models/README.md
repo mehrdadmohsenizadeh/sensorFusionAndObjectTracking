@@ -55,8 +55,7 @@
       </li>
       <br>
       <li>
-      The Darknet architecture consists of a series of convolutional layers, followed by pooling layers, and optionally, fully connected layers. It uses the LeakyReLU
-      activation function and employs various techniques such as batch normalization, residual connections, and skip connections to improve the accuracy and speed of
+      The Darknet architecture consists of a series of convolutional layers, followed by pooling layers, and optionally, fully connected layers. It uses the $\textbf{LeakyReLU}$ activation function and employs various techniques such as $\textbf{batch normalization}$ and $\textbf{residual (skip) connections}$ to improve the accuracy and speed of
       the model.
       </li>
       <br>
