@@ -71,11 +71,12 @@ Also, the project code contains various tasks, which are detailed step-by-step i
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
 ## Repo structure
 
-* In this project, we will deal with different file formats (e.g., <code>.py</code>, <code>.tfrecord</code>, <code>.pkl</code>, <code>.proto</code>, <code>.png</code>, <code>.cfg</code>, <code>.pth</code>, <code>.dockerfile</code>).
+* In this project, you may encounter and work with different file formats (e.g., <code>.py</code>, <code>.tfrecord</code>, <code>.pkl</code>, <code>.proto</code>, <code>.png</code>, <code>.cfg</code>, <code>.pth</code>).
 
 * This repo contains the following directories and files:
-
-💡 <b>Note:</b> Learn more about sub-directories and/or files of each directory by clicking on that directory and reading its <code>README.md</code> file.
+>
+> 💡 <b>Note:</b> To learn more about sub-directories and/or files of each directory, click on that directory and read the <code>README.md</code> file in it.
+>
 <table>
   <thead>
     <tr>
@@ -214,7 +215,9 @@ Also, the project code contains various tasks, which are detailed step-by-step i
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
 ## Installation Instructions for Running Locally
+
 ### Cloning the Project
 In order to create a local copy of the project, please click on "Code" and then "Download ZIP". Alternatively, you may of-course use GitHub Desktop or Git Bash for this purpose. 
 
