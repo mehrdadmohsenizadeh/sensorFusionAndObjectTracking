@@ -33,7 +33,7 @@
     </tr>
     <tr>
       <td>📁<code>pretrained</code></td>
-      <td>Contains <code>.cfg</code> and <code>.pth</code> files of a pretrained $\textbf{Complex-YOLOv4}$ model whithin which the $\textbf{configurations}$ and $\textbf{MSE losses}$ are saved, respectively.
+      <td>Contains <code>.cfg</code> and <code>.pth</code> files of a pretrained $\textbf{Complex-YOLOv4}$ model within which the $\textbf{configurations}$ and $\textbf{MSE losses}$ of the model are saved, respectively.
       </td>
       <td>
         <img src="/img/icon_file_config.png" width="10%"><code>complex_yolov4.cfg</code>
