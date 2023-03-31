@@ -4,16 +4,16 @@
 <table>
   <thead>
     <tr>
-      <th width="15%">Folder</th>
-      <th>Description</th>
-      <th width="33%">Sub-Folders/Files</th>
+      <th width="20%">Folder</th>
+      <th width="40%">Description</th>
+      <th width="28%">Sub-Folders/Files</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>📁<code>__MACOSX</code></td>
+      <td>📁<code>__MACOSX/pretrained</code></td>
       <td>Contains the <code>pre-trained</code> folder for the $\textbf{Mac OS X}$ users.</td>
-      <td>📁<code>pretrained</code></td>
+      <td><img src="/img/icon_file_config.png" width="10%"><code>._complex_yolov4_mse_loss.pth</code></td>
     </tr>
     <tr>
       <td>📁<code>config</code></td>
