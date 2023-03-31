@@ -61,7 +61,7 @@
       <li> A deep neural network architecture that combines two popular convolutional neural networks (CNNs):$
         <ol>
         <li> $\textbf{ResNet}$: A deep CNN architecture that introduces the concept of $\textbf{residual blocks}$ and $\textbf{residual (skip) connections}$, which help to alleviate the $\textbf{vanishing gradient problem}$ during training. In object detection, a $\textbf{ResNet}$ model is typically used as a $\textbf{backbone}$ network to $\textbf{extract features}$ from an input image, which are then fed into an object detection $\textbf{head}$ to predict $\textbf{bounding boxes (bb)}$ and $\textbf{class labels}$ for objects in the image.
-        <li> $\textbf{FPN}$: A $\textbf{feature extraction}$ architecture that enhances the feature representation of an input image by using a pyramid of multi-scale feature maps.
+        <li> $\textbf{FPN}$: A $\textbf{feature extraction}$ architecture that enhances the feature representation of an input image by using a $\textbf{pyramid of multi-scale feature maps}$.
         </ol>
       <li> The $\textbf{FPN-ResNet}$ model takes advantage of the strengths of both architectures to improve $\textbf{object detection}$ and $\textbf{semantic segmentation}$ tasks. In this architecture:
         <ol>
