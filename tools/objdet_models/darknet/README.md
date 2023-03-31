@@ -1,6 +1,5 @@
 # Folder sructure
 
-
 <table>
   <thead>
     <tr>
@@ -62,4 +61,11 @@
   </tbody>
 </table>
 
+# What is a <code>.pth</code> file?
+<li>
+  In PyTorch, a <code>.pth</code> file is a file extension used for saving and loading trained models. When you train a neural network model in PyTorch, the parameters (weights and biases) of the model are updated during training. Once the training is complete, you can save the state of the model, including the trained parameters, to a <code>.pth</code> file.
+</li>
+<li>
+  This file can be used to reload the trained model later for making predictions or continuing training. It contains the values of the model's parameters and can be loaded into a PyTorch model using the <code>torch.load()</code> function. The <code>torch.load()</code> function returns a Python dictionary that contains the saved state of the model. 
+</li>
 
